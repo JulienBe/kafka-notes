@@ -31,22 +31,25 @@
         <h2>
 <a id="start" class="anchor" href="#start" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start</h2>
 
-<p>zookeeper : <em>bin</em>/<strong>zookeeper-server-start.sh</strong> <em>config</em>/<strong>zookeeper.properties</strong>
-kafka : <em>bin</em>/<strong>kafka-server-start.sh</strong> <em>config</em>/<strong>server.properties</strong></p>
+<p>zookeeper : <em>bin</em>/<strong>zookeeper-server-start.sh</strong> <em>config</em>/<strong>zookeeper.properties</strong></p>
+
+<p>kafka : <em>bin</em>/<strong>kafka-server-start.sh</strong> <em>config</em>/<strong>server.properties</strong></p>
 
 <h2>
 <a id="topics" class="anchor" href="#topics" aria-hidden="true"><span class="octicon octicon-link"></span></a>topics</h2>
 
 <p><em>bin</em>/<strong>kafka-topics.sh</strong></p>
 
-<p>create : <strong>--create</strong> <em>--zookeeper zookeeperAddress:port --replication-factor [1-X] --partitions 1 --topic name</em>
-list : <strong>--list</strong> --zookeeper zookeeperAddress:port</p>
+<p>create : <strong>--create</strong> <em>--zookeeper zookeeperAddress:port --replication-factor [1-X] --partitions 1 --topic name</em></p>
+
+<p>list : <strong>--list</strong> --zookeeper zookeeperAddress:port</p>
 
 <h2>
 <a id="console-tests" class="anchor" href="#console-tests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Console tests</h2>
 
-<p>Producer : <em>bin</em>/<strong>kafka-console-producer.sh</strong> <em>--broker-list address:port --topic name</em>
-Consumer : <em>bin</em>/<strong>kafka-console-consumer.sh</strong> <em>--zookeeper address:port --topic name --from-beginning</em></p>
+<p>Producer : <em>bin</em>/<strong>kafka-console-producer.sh</strong> <em>--broker-list address:port --topic name</em></p>
+
+<p>Consumer : <em>bin</em>/<strong>kafka-console-consumer.sh</strong> <em>--zookeeper address:port --topic name --from-beginning</em></p>
       </section>
     </div>
 
