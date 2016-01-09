@@ -31,25 +31,60 @@
         <h2>
 <a id="start" class="anchor" href="#start" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start</h2>
 
-<p>zookeeper : <em>bin</em>/<strong>zookeeper-server-start.sh</strong> <em>config</em>/<strong>zookeeper.properties</strong></p>
+<p>zookeeper : </p>
 
-<p>kafka : <em>bin</em>/<strong>kafka-server-start.sh</strong> <em>config</em>/<strong>server.properties</strong></p>
+<blockquote>
+<p><em>bin</em>/<strong>zookeeper-server-start.sh</strong> <em>config</em>/<strong>zookeeper.properties</strong></p>
+</blockquote>
+
+<p>kafka : </p>
+
+<blockquote>
+<p><em>bin</em>/<strong>kafka-server-start.sh</strong> <em>config</em>/<strong>server.properties</strong></p>
+</blockquote>
 
 <h2>
 <a id="topics" class="anchor" href="#topics" aria-hidden="true"><span class="octicon octicon-link"></span></a>topics</h2>
 
+<blockquote>
 <p><em>bin</em>/<strong>kafka-topics.sh</strong></p>
+</blockquote>
 
-<p>create : <strong>--create</strong> <em>--zookeeper zookeeperAddress:port --replication-factor [1-X] --partitions 1 --topic name</em></p>
+<p>create : </p>
 
-<p>list : <strong>--list</strong> --zookeeper zookeeperAddress:port</p>
+<blockquote>
+<p><strong>--create</strong> <em>--zookeeper zookeeperAddress:port --replication-factor [1-X] --partitions 1 --topic name</em></p>
+</blockquote>
+
+<p>list : </p>
+
+<blockquote>
+<p><strong>--list</strong> --zookeeper zookeeperAddress:port</p>
+</blockquote>
 
 <h2>
 <a id="console-tests" class="anchor" href="#console-tests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Console tests</h2>
 
-<p>Producer : <em>bin</em>/<strong>kafka-console-producer.sh</strong> <em>--broker-list address:port --topic name</em></p>
+<p>Producer : </p>
 
-<p>Consumer : <em>bin</em>/<strong>kafka-console-consumer.sh</strong> <em>--zookeeper address:port --topic name --from-beginning</em></p>
+<blockquote>
+<p><em>bin</em>/<strong>kafka-console-producer.sh</strong> <em>--broker-list address:port --topic name</em></p>
+</blockquote>
+
+<p>Consumer : </p>
+
+<blockquote>
+<p><em>bin</em>/<strong>kafka-console-consumer.sh</strong> <em>--zookeeper address:port --topic name --from-beginning</em></p>
+</blockquote>
+
+<p>Connector : </p>
+
+<blockquote>
+<p><em>bin</em>/<strong>connect-standalone.sh</strong> <em>config</em>/<strong>connect-standalone.properties</strong> <em>config</em>/<strong>connect-file-source.properties</strong> <em>config</em>/<strong>connect-file-sink.properties</strong></p>
+</blockquote>
+
+<p><em>connect-standalone.properties</em> : Configuration for the <strong>Kafka Connect process</strong>, containing common configuration such as the Kafka brokers to connect to and the serialization format for data.
+<em>connect-file-source.properties</em> and <em>connect-file-sink.properties</em>: Specify a connector to create. These files include a unique connector name, the connector class to instantiate, and any other configuration required by the connector.</p>
       </section>
     </div>
 
